@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Тестова сторінка з дизайнерськими елементами</title>
+	<style>
+		/* встановлення тіні, градієнту та зміщення для блоку div */
+		div {
+			box-shadow: 2px 2px 5px #888888;
+			background: linear-gradient(to bottom, #FFFFFF 0%, #CCCCCC 100%);
+			margin: 20px;
+			padding: 20px;
+			border-radius: 10px;
+			text-align: center;
+		}
+		
+		/* встановлення ефекту при наведенні курсора на растрове зображення */
+		img:hover {
+			transform: scale(1.1);
+			transition: transform 0.5s;
+		}
+		
+		/* встановлення ефекту при натисканні на векторне SVG-зображення */
+		svg:active {
+			fill: #FF0000;
+			transition: fill 0.5s;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Тестовий блок з дизайнерськими елементами</h1>
+		<p>Це текст в тестовому блоку</p>
+        <h2>Тестовий блок з дизайнерськими елементами</h1>
+		<!-- встановлення растрового зображення з ефектом при наведенні -->
+		<img src="/img/image.svg" alt="Растрове зображення">
+		<!-- встановлення векторного SVG-зображення з ефектом при натисканні -->
+		<svg viewBox="0 0 100 100">
+			<circle cx="50" cy="50" r="40"/>
+		</svg>
+	</div>
+</body>
+</html>
